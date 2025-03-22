@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Dishes - Phase 3 Connect</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="assets/logo.webp" alt="Phase 3 Connect Logo" width="100">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search Dishes..." id="dishSearch">
+            <button onclick="searchDishes()">Search</button>
+        </div>
+    </header>
+
+    <!-- Menu Section -->
+    <section class="menu">
+        <h1>All Available Dishes</h1>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="https://cdn.hackclubber.dev/slackcdn/addf012c5680148cd58a2f25a11383ca.jpg" alt="Spicy Burger">
+                <div class="menu-details">
+                    <h2>Spicy Burger</h2>
+                    <p class="price">₹599</p>
+                    <a href="orders/wings.html">
+                        <button href="orders/burger1.html">BUY NOW</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://cdn.hackclubber.dev/slackcdn/881ec002e4d9e91a9a3f360355b8ac06.jpg" alt="Veggie Pizza">
+                <div class="menu-details">
+                    <h2>Veggie Pizza</h2>
+                    <p class="price">₹899</p>
+                    <a href="orders/wings.html">
+                        <button href="orders/pizza.html">BUY NOW</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://cdn.hack.pet/slackcdn/7e09d1c2171e9daa1f9477e92d096d2a.jpg" alt="Chicken Wings">
+                <div class="menu-details">
+                    <h2>Chicken Wings</h2>
+                    <p class="price">₹699</p>
+                    <a href="orders/wings.html">
+                        <button href="orders/wings.html">BUY NOW</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Phase 3 Connect. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
