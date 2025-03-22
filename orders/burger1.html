@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Order - Spicy Burger</title>
+    <title>Order - CHCG HP 5000</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
         
@@ -104,8 +104,8 @@
 </head>
 <body>
     <div class="order-container">
-        <img src="https://cdn.hackclubber.dev/slackcdn/addf012c5680148cd58a2f25a11383ca.jpg" alt="Spicy Burger">
-        <h1>Order Your Spicy Burger</h1>
+        <img src="https://cdn.hackclubber.dev/slackcdn/addf012c5680148cd58a2f25a11383ca.jpg" alt="CHCG HP 5000">
+        <h1>Order CHCG HP 5000</h1>
         <form id="orderForm">
             <label for="name">Full Name:</label>
             <input type="text" id="name" required>
@@ -119,10 +119,6 @@
             <label for="quantity">Quantity:</label>
             <input type="number" id="quantity" min="1" required>
 
-            <label for="size">Choose Size:</label>
-            <select id="size">
-                <option value="Regular">Regular</option>
-                <option value="Large">Large</option>
             </select>
 
             <label for="notes">Special Instructions:</label>
@@ -130,7 +126,7 @@
 
             <button type="submit" class="order-btn">Place Order</button>
         </form>
-        <footer>&copy; 2025 Phase3Connect</footer>
+        <footer>&copy; 2025 Chhaya Distributors</footer>
     </div>
 
     <script>
@@ -186,16 +182,14 @@
             const phone = document.getElementById('phone').value;
             const address = document.getElementById('address').value;
             const quantity = document.getElementById('quantity').value;
-            const size = document.getElementById('size').value;
             const notes = document.getElementById('notes').value;
     
             const orderDetails = `
-                **New Order: Spicy Burger**
+                **New Order: CHCG HP 5000**
                 - **Name:** ${name}
                 - **Phone:** ${phone}
                 - **Address:** ${address}
                 - **Quantity:** ${quantity}
-                - **Size:** ${size}
                 - **Notes:** ${notes || 'None'}
             `;
     
