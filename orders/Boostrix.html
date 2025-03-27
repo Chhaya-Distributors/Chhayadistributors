@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Order - Chicken Wings</title>
+    <title>Order - Boostrix</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
         
@@ -119,10 +119,6 @@
             <label for="quantity">Quantity:</label>
             <input type="number" id="quantity" min="1" required>
 
-            <label for="size">Choose Size:</label>
-            <select id="size">
-                <option value="Regular">Regular</option>
-                <option value="Large">Large</option>
             </select>
 
             <label for="notes">Special Instructions:</label>
@@ -186,7 +182,6 @@
             const phone = document.getElementById('phone').value;
             const address = document.getElementById('address').value;
             const quantity = document.getElementById('quantity').value;
-            const size = document.getElementById('size').value;
             const notes = document.getElementById('notes').value;
     
             const orderDetails = `
@@ -195,7 +190,6 @@
                 - **Phone:** ${phone}
                 - **Address:** ${address}
                 - **Quantity:** ${quantity}
-                - **Size:** ${size}
                 - **Notes:** ${notes || 'None'}
             `;
     
