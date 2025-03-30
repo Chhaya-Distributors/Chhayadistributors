@@ -1,6 +1,15 @@
+// Add this line at the very beginning of script.js
+alert("Script is working!");
+
+// Your actual JavaScript code starts here
 document.addEventListener("DOMContentLoaded", () => {
     const searchInput = document.querySelector(".search-bar input");
     const vaccineItems = document.querySelectorAll(".dish");
+
+    if (!searchInput || vaccineItems.length === 0) {
+        alert("Search bar or dishes not found. Check your HTML structure.");
+        return;
+    }
 
     searchInput.addEventListener("keyup", () => {
         const searchValue = searchInput.value.toLowerCase();
@@ -9,11 +18,10 @@ document.addEventListener("DOMContentLoaded", () => {
             const title = item.querySelector("h3").textContent.toLowerCase();
             
             if (title.includes(searchValue)) {
-                item.style.display = "block"; // Show the item if it matches
+                item.style.display = "block"; // Show matching items
             } else {
-                item.style.display = "none"; // Hide the item if it doesn't match
+                item.style.display = "none"; // Hide non-matching items
             }
         });
     });
 });
-
