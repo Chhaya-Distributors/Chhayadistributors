@@ -45,14 +45,13 @@ nav a:hover {
 }
 
 .search-bar {
-    background-color: #f0f0f0; /* Light gray background for visibility */
+    background-color: #007bff; /* Light gray background for visibility */
     padding: 5px;
     border-radius: 8px; /* Rounded corners */
     width: 300px;
 }
 
 .search-bar input {
-    color: #007bff;
     padding: 7px 15px;
     border: none;
     border-radius: 5px;
