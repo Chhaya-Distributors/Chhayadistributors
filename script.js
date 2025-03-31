@@ -1,7 +1,3 @@
-// Add this line at the very beginning of script.js
-alert("Script is working!");
-
-// Your actual JavaScript code starts here
 document.addEventListener("DOMContentLoaded", () => {
     const searchInput = document.querySelector(".search-bar input");
     const vaccineItems = document.querySelectorAll(".dish");
