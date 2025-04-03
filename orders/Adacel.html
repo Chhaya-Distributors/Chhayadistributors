@@ -200,7 +200,7 @@
                 },
                 body: JSON.stringify({ content: orderDetails })
             }).then(() => {
-                alert('Order placed successfully! we will call you shortly for more details and payment');
+                alert('Order placed successfully! we will call you shortly for more details and confirmation');
                 document.getElementById('orderForm').reset();
             }).catch(err => console.error('Error:', err));
         });
